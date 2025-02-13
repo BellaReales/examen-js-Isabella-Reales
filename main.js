@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 sessionStorage.setItem('currentUser', email);
 
                 // Redirigir a la página principal
-                window.location.href = "../pages/principal.html";
+                window.location.href = "../pages/crear.html";
             } else {
                 alert("Correo electrónico o contraseña incorrectos.");
             }

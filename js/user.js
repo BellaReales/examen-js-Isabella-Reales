@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('#registration-form');
     
-    // Campos del formulario de registro
+
     const emailInput = document.getElementById('email');
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById('password');
     const confirmPasswordInput = document.getElementById('confirm-password');
     
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevenir el envío del formulario
+        event.preventDefault();
 
         // Obtener los datos del formulario de registro
         const email = emailInput.value.trim();
@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         alert("¡Registro exitoso!");
 
-        // Redirigir al usuario al catálogo (puedes cambiar esta URL si es necesario)
         window.location.href = "../pages/crear.html";
     });
 
